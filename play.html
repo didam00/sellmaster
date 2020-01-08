@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon-152.png">
+    <link rel="icon" href="favicon-32.png">
+    <link rel="icon" href="favicon-16.png">
+    <script>
+      function $(a) {return document.querySelector(a)};
+      function $$(a) {return document.querySelectorAll(a)};
+      var selected;
+      var maps;
+    </script>
+    <script charset="utf-8" src="js/main.js"></script>
+    <script charset="utf-8" src="js/preload.js"></script>
+
+    <!-- data -->
+    <script charset="utf-8" src="data/map.js"></script>
+
+    <title>셀마스터</title>
+  </head>
+  <body>
+    <div id="loading">
+      <img src="imgs/loading.gif">
+      <p>기다려 로딩중이야...</p>
+    </div>
+
+    <div id="space">
+
+      <div id="ground"></div>
+
+      <img id="moon" src="imgs/moon.png"/>
+
+      <img id="player" src="imgs/player.png">
+
+      <!-- <img id="mob" src="imgs/mob/slime.png"> -->
+
+      <img id="weapon" src="imgs/item/normal_sword.png">
+    </div>
+    <div id="health_bar">
+      <div id="health"></div>
+      <img src="imgs/health_bar.png">
+    </div>
+    <div id="alarm">
+      <!-- <img src="imgs/coin.png"> -->
+      <div>00000000</div>
+    </div>
+
+    <img id="crepe" src="imgs/crepe.png"/>
+
+    <div id="inventory">
+      <img id="crepe_open" src="imgs/crepe_open.png"/>
+    </div>
+
+    <div id="buttonsDivPressed">
+      <ul>
+        <li>
+          <img src="imgs/no_button_pressed.png">
+          <!-- 취소 -->
+        </li>
+        <li>
+          <img src="imgs/yes_button_pressed.png">
+          <!-- 확인 -->
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="imgs/up_button_pressed.png">
+          <!-- 위쪽 -->
+        </li>
+        <li>
+          <img src="imgs/right_button_pressed.png">
+          <!-- 오른쪽 -->
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="imgs/left_button_pressed.png">
+          <!-- 왼쪽 -->
+        </li>
+        <li>
+          <img src="imgs/down_button_pressed.png">
+          <!-- 아래쪽 -->
+        </li>
+      </ul>
+    </div>
+    <div id="buttonsDiv">
+      <ul>
+        <li>
+          <img src="imgs/no_button.png" onclick="buttonPressed(this)">
+          <!-- 취소 -->
+        </li>
+        <li>
+          <img src="imgs/yes_button.png" onclick="buttonPressed(this)">
+          <!-- 확인 -->
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="imgs/up_button.png" onclick="buttonPressed(this)">
+          <!-- 위쪽 -->
+        </li>
+        <li>
+          <img src="imgs/right_button.png" onclick="buttonPressed(this)">
+          <!-- 오른쪽 -->
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <img src="imgs/left_button.png" onclick="buttonPressed(this)">
+          <!-- 왼쪽 -->
+        </li>
+        <li>
+          <img src="imgs/down_button.png" onclick="buttonPressed(this)">
+          <!-- 아래쪽 -->
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
