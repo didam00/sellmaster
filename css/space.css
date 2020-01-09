@@ -1,0 +1,36 @@
+#space {
+  position: absolute;
+  top: 64.5px;
+  width: calc(100% - 10px);
+  height: calc(100% - 326px);
+  overflow: hidden;
+  color: #c4f0c2;
+}
+
+#space > * {
+  position: absolute;
+}
+
+#weapon {
+  transform: rotate(90deg) translate(0, -50%);
+  left: calc(50% - 32px);
+  top: calc(50% - 22px);
+
+  height: 104px;
+  width: 48px;
+}
+
+#player {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: calc(50% + 10px);
+
+  width: 80px;
+}
+
+#moon {
+  transform: translateX(-50%);
+  left: 50%;
+  top: 24px;
+  width: 32px;
+}

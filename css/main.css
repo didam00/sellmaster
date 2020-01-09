@@ -110,37 +110,6 @@ html {
   left: 11px;
 }
 
-#space {
-  position: absolute;
-  top: 64.5px;
-  width: calc(100% - 10px);
-  height: calc(100% - 326px);
-  overflow: hidden;
-  color: #c4f0c2;
-}
-
-#space > * {
-  position: absolute;
-}
-
-#weapon {
-  transform: rotate(90deg) translate(0, -50%);
-  left: calc(50% - 32px);
-  top: calc(50% - 22px);
-}
-
-#player {
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: calc(50% + 10px);
-}
-
-#moon {
-  transform: translateX(-50%);
-  left: 50%;
-  top: 24px;
-}
-
 #center {
   transform: translate(-50%, -50%);
   left: 50%;
@@ -174,6 +143,7 @@ html {
   left: 50%;
   top: calc(50% + 134px);
   background-position: 128px;
+  background-size: 128px;
 }
 
 #crepe {
@@ -203,6 +173,13 @@ html {
 
 #newWindow_inventory {
   z-index: 10;
+}
+
+#setting {
+  position: absolute;
+  width: 54px;
+  left: 5px;
+  top: 62px;
 }
 
 .newWindow ul:nth-child(1) li:nth-child(1) img {height: 15px; width: 6px;}
