@@ -139,9 +139,8 @@ html {
   background: url(../imgs/ground1.png);
   width: 100%;
   height: 128px;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: calc(50% + 134px);
+  left: 0px;
+  top: calc(50% + 70px);
   background-position: 128px;
   background-size: 128px;
 }
@@ -158,7 +157,7 @@ html {
   top: -27px;
   left: 0px;
   height: 54px;
-  z-index: 11;
+  z-index: 12;
 }
 
 #inventory {
@@ -177,9 +176,17 @@ html {
 
 #setting {
   position: absolute;
-  width: 54px;
+  width: 48px;
   left: 5px;
-  top: 62px;
+  top: 64px;
+}
+
+#items {
+  position: absolute;
+  left: 6px;
+  bottom: 6px;
+  width: 100px;
+  height: 100px;
 }
 
 .newWindow ul:nth-child(1) li:nth-child(1) img {height: 15px; width: 6px;}

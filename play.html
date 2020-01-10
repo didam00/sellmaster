@@ -13,13 +13,15 @@
       function $(a) {return document.querySelector(a)};
       function $$(a) {return document.querySelectorAll(a)};
       var selected;
-      var maps;
+      var maps, mobs;
     </script>
     <script charset="utf-8" src="js/main.js"></script>
+    <script charset="utf-8" src="js/global.js"></script>
     <script charset="utf-8" src="js/preload.js"></script>
 
     <!-- data -->
     <script charset="utf-8" src="data/map.js"></script>
+    <script charset="utf-8" src="data/mob.js"></script>
 
     <title>셀마스터</title>
   </head>
@@ -54,6 +56,9 @@
 
     <div id="inventory">
       <img id="crepe_open" src="imgs/crepe_open.png"/>
+      <ul id="items">
+
+      </ul>
     </div>
 
     <div id="buttonsDivPressed">
@@ -120,6 +125,7 @@
         </li>
       </ul>
     </div>
-    <img id="setting" src="imgs/setting.png"/>
+    <img id="setting" src="imgs/setting_pressed.png">
+    <img id="setting" src="imgs/setting.png" onclick="buttonPressed(this)"/>
   </body>
 </html>

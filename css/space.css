@@ -34,3 +34,7 @@
   top: 24px;
   width: 32px;
 }
+
+#mobs {
+  transform: translateX(-50%);
+}
