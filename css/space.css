@@ -12,12 +12,9 @@
 }
 
 #weapon {
-  transform: rotate(90deg) translate(0, -50%);
-  left: calc(50% - 32px);
-  top: calc(50% - 22px);
-
-  height: 104px;
-  width: 48px;
+  transform: rotate(20deg) translate(-50%, -50%);
+  left: calc(50% + 32px);
+  top: calc(50% + 64px);
 }
 
 #player {

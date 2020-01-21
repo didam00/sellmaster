@@ -183,10 +183,19 @@ html {
 
 #items {
   position: absolute;
-  left: 6px;
-  bottom: 6px;
-  width: 100px;
-  height: 100px;
+  left: 9px;
+  bottom: 27px;
+  width: calc(100% - 17px);
+  height: calc(100% - 58px);
+  margin: 0;
+  padding: 0;
+  z-index: 11;
+}
+
+#items li {
+  color: #c4f0c2;
+  font-size: 15px;
+  margin-bottom: 3px;
 }
 
 .newWindow ul:nth-child(1) li:nth-child(1) img {height: 15px; width: 6px;}
@@ -207,5 +216,5 @@ html {
 .newWindow {position: absolute; z-index: 999}
 
 .sel {
-
+  background: #5ab9a8;
 }
